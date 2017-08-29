@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CountryListView</string>
+    <string-array name="arrayCountries">
+        <item>Turkey</item>
+        <item>Germany</item>
+        <item>Spain</item>
+    </string-array>
+</resources>

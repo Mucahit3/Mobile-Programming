@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtVw_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Second Display"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="35sp"/>
+
+    <Button
+        android:id="@+id/btn_gowebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Web Site" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+</LinearLayout>

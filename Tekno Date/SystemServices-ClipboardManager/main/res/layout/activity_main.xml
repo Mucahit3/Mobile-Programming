@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:gravity="center_horizontal"
+    tools:context="com.example.muhammetmucahit.systemservices_clipboardmanager.MainActivity">
+
+    <EditText
+        android:id="@+id/editText_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Copy Text" >
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_paste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Paste Text" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/btn_copy"
+            android:text="Copy Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_paste"
+            android:text="Paste Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

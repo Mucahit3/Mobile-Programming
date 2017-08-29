@@ -1,0 +1,26 @@
+<item xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.muhammetmucahit.basicactivityandmenus.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_neighbourhoods"
+        android:orderInCategory="100"
+        android:title="Neighbourhoods"
+        app:showAsAction="never" >
+        <menu>
+            <group>
+
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_cities"
+        android:orderInCategory="100"
+        android:title="Cities"
+        app:showAsAction="never" />
+</menu>

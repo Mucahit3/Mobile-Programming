@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.muhammetmucahit.fragment.MainActivity">
+
+    <!--<fragment-->
+        <!--android:id="@+id/fragment_a"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout="@layout/fragment_a"-->
+        <!--android:name="com.example.muhammetmucahit.fragment.fragment_a"/>-->
+
+    <!--<fragment-->
+        <!--android:id="@+id/fragment_b"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout="@layout/fragment_b"-->
+        <!--android:name="com.example.muhammetmucahit.fragment.fragment_b"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_addA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btn_add_A_click"
+            android:text="Add A"/>
+
+        <Button
+            android:id="@+id/btn_deleteA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btn_delete_A_click"
+            android:text="Delete A"/>
+
+        <Button
+            android:id="@+id/btn_changeA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btn_change_A_click"
+            android:text="A >> B"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_addB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btn_add_B_click"
+            android:text="Add B"/>
+
+        <Button
+            android:id="@+id/btn_deleteB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btn_delete_B_click"
+            android:text="Delete B"/>
+
+        <Button
+            android:id="@+id/btn_changeB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btn_change_B_click"
+            android:text="B >> A"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </LinearLayout>
+
+</LinearLayout>

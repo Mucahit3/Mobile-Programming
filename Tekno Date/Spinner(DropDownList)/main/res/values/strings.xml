@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Spinner(Drop Down List)</string>
+    <string name="selectCountry">Select Country</string>
+    <string-array name="country_array">
+        <item>Turkey</item>
+        <item>Bulgaria</item>
+        <item>Greece</item>
+        <item>Canada</item>
+        <item>Czech Republic</item>
+        <item>Italy</item>
+        <item>Spain</item>
+        <item>France</item>
+    </string-array>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muhammetmucahit.mythirdapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/txtVw_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter first number: "
+        android:layout_alignBaseline="@+id/edtTxt_first"
+        android:layout_alignBottom="@+id/edtTxt_first"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtVw_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter second number: "
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/txtVw_first"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edtTxt_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="First Number"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/edtTxt_second"
+        android:layout_alignStart="@+id/edtTxt_second" />
+
+    <EditText
+        android:id="@+id/edtTxt_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Second Number"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignBaseline="@+id/txtVw_second"
+        android:layout_alignBottom="@+id/txtVw_second"
+        android:layout_toRightOf="@+id/txtVw_second"
+        android:layout_toEndOf="@+id/txtVw_second" />
+
+    <Button
+        android:id="@+id/btn_Collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtTxt_first"
+        android:layout_alignRight="@+id/edtTxt_first"
+        android:layout_below="@+id/edtTxt_second"
+        android:layout_marginEnd="97dp"
+        android:layout_marginRight="97dp"
+        android:layout_marginTop="47dp"
+        android:text="Collect" />
+
+    <TextView
+        android:id="@+id/txtVw_Sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sum: "
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/edtTxt_second"
+        android:layout_toStartOf="@+id/edtTxt_second" />
+
+</RelativeLayout>

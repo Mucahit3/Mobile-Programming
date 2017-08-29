@@ -1,0 +1,7368 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 5600
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(SystemUiHider.java)-23597.5(spawrks 09/18/14)-29598.4(1-1/4\(1\))]TJ
+/TT4 1 Tf
+2.5 -1.6333 TD
+(1:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(package)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( com.delta.bartalk.util;)Tj
+-6 -1.1 TD
+(2:)Tj
+T*
+(3:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.app.Activity;)Tj
+-5.4 -1.1 TD
+(4:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.os.Build;)Tj
+-5.4 -1.1 TD
+(5:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.view.View;)Tj
+-5.4 -1.1 TD
+(6:)Tj
+T*
+(7:)Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-1.8 -1.1 TD
+(8:)Tj
+/TT6 1 Tf
+1.8 0 TD
+( * A utility class that helps with showing and hiding system UI such as the)Tj
+/TT4 1 Tf
+-1.8 -1.1 TD
+(9:)Tj
+/TT6 1 Tf
+1.8 0 TD
+( * status bar and navigation/system bar. This class uses backward-compatibility)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(10:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * techniques described in <a href=)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(11:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * "http://developer.android.com/training/backward-compatible-ui/index.html">)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(12:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * Creating Backward-Compatible UIs</a> to ensure that devices running any)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(13:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * version of ndroid OS are supported. More specifically, there are separate)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(14:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * implementations of this abstract class: for newer devices,)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(15:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * {@link #getInstance} will return a {@link SystemUiHiderHoneycomb} instance,)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(16:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * while on older devices {@link #getInstance} will return a)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(17:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * {@link SystemUiHiderBase} instance.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(18:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * <p>)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(19:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * For more on system bars, see <a href=)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(20:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * "http://developer.android.com/design/get-started/ui-overview.html#system-bars")Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(21:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * > System Bars</a>.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(22:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * )Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(23:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * @see android.view.View#setSystemUiVisibility\(int\))Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(24:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * @see android.view.WindowManager.LayoutParams#FLAG_FULLSCREEN)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(25:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+(26:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(abstract)Tj
+/TT4 1 Tf
+0 g
+4.8 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(class)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( SystemUiHider {)Tj
+-15 -1.1 TD
+[(27:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(28:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * When this flag is set, the)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(29:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * {@link android.view.WindowManager.LayoutParams#FLAG_LAYOUT_IN_SCREEN})Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(30:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * flag will be set on older devices, making the status bar "float" on top)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(31:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * of the activity layout. This is most useful when there are no controls at)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(32:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * the top of the activity layout.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(33:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * <p>)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(34:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * This flag isnít used on newer devices because the <a)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(35:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * href="http://developer.android.com/design/patterns/actionbar.html">action)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(36:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * bar</a>, the most important structural element of an Android app, should)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(37:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * be visible and not obscured by the system UI.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(38:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(39:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( FLAG_LAYOUT_IN_SCREEN_OLDER_DEVICES = 0x1;)Tj
+-18.6 -1.1 TD
+(40:)Tj
+T*
+[(41:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(42:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * When this flag is set, {@link #show\(\)} and {@link #hide\(\)} will toggle)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(43:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * the visibility of the status bar. If there is a navigation bar, show and)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(44:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * hide will toggle low profile mode.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(45:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(46:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( FLAG_FULLSCREEN = 0x2;)Tj
+-18.6 -1.1 TD
+(47:)Tj
+T*
+[(48:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Length 5539
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(SystemUiHider.java)-23597.5(spawrks 09/18/14)-29598.4(1-2/4\(2\))]TJ
+/TT4 1 Tf
+0.698 0.133 0.133 rg
+1.9 -1.6333 TD
+(49:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * When this flag is set, {@link #show\(\)} and {@link #hide\(\)} will toggle)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(50:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * the visibility of the navigation bar, if itís present on the device and)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(51:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * the device allows hiding it. In cases where the navigation bar is present)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(52:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * but cannot be hidden, show and hide will toggle low profile mode.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(53:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(54:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( FLAG_HIDE_NAVIGATION = FLAG_FULLSCREEN | 0x4;)Tj
+-18.6 -1.1 TD
+(55:)Tj
+T*
+[(56:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(57:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * The activity associated with this UI hider object.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(58:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(59:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(protected)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( Activity mActivity;)Tj
+-10.2 -1.1 TD
+(60:)Tj
+T*
+[(61:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(62:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * The view on which {@link View#setSystemUiVisibility\(int\)} will be called.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(63:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(64:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(protected)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( View mAnchorView;)Tj
+-10.2 -1.1 TD
+(65:)Tj
+T*
+[(66:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(67:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * The current UI hider flags.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(68:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * )Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(69:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * @see #FLAG_FULLSCREEN)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(70:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * @see #FLAG_HIDE_NAVIGATION)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(71:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * @see #FLAG_LAYOUT_IN_SCREEN_OLDER_DEVICES)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(72:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(73:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(protected)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( mFlags;)Tj
+-12.6 -1.1 TD
+(74:)Tj
+T*
+[(75:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(76:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * The current visibility callback.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(77:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(78:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(protected)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( OnVisibilityChangeListener mOnVisibilityChangeListener = sDummyListener;)Tj
+-10.2 -1.1 TD
+(79:)Tj
+T*
+[(80:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(81:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * Creates and returns an instance of {@link SystemUiHider} that is)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(82:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * appropriate for this device. The object will be either a)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(83:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * {@link SystemUiHiderBase} or {@link SystemUiHiderHoneycomb} depending on)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(84:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * the device.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(85:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * )Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(86:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * @param activity The activity whose windowís system UI should be)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(87:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     *            controlled by this class.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(88:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * @param anchorView The view on which)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(89:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     *            {@link View#setSystemUiVisibility\(int\)} will be called.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(90:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * @param flags Either 0 or any combination of {@link #FLAG_FULLSCREEN},)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(91:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     *            {@link #FLAG_HIDE_NAVIGATION}, and)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(92:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     *            {@link #FLAG_LAYOUT_IN_SCREEN_OLDER_DEVICES}.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(93:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(94:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( SystemUiHider getInstance\(Activity activity, View anchorView, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+37.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( flags\) {)Tj
+-52.2 -1.1 TD
+[(95:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB\) {)Tj
+-8.4 -1.1 TD
+[(96:)-599.7(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( SystemUiHiderHoneycomb\(activity, anchorView, flags\);)Tj
+ET
+endstream
+endobj
+11 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+13 0 obj
+<<
+/Length 4813
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(SystemUiHider.java)-23597.5(spawrks 09/18/14)-29598.4(1-3/4\(3\))]TJ
+/TT4 1 Tf
+1.9 -1.6333 TD
+[(97:)-599.7(        } )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(else)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( {)Tj
+-10.8 -1.1 TD
+[(98:)-599.7(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( SystemUiHiderBase\(activity, anchorView, flags\);)Tj
+-15.6 -1.1 TD
+[(99:)-599.7(        })]TJ
+-0.6 -1.1 TD
+[(100:)-599.6(    })]TJ
+T*
+(101:)Tj
+T*
+[(102:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(protected)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( SystemUiHider\(Activity activity, View anchorView, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+30.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( flags\) {)Tj
+-43.2 -1.1 TD
+[(103:)-599.6(        mActivity = activity;)]TJ
+T*
+[(104:)-599.6(        mAnchorView = anchorView;)]TJ
+T*
+[(105:)-599.6(        mFlags = flags;)]TJ
+T*
+[(106:)-599.6(    })]TJ
+T*
+(107:)Tj
+T*
+[(108:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(109:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * Sets up the system UI hider. Should be called from)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(110:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * {@link Activity#onCreate}.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(111:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(112:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(abstract)Tj
+/TT4 1 Tf
+0 g
+4.8 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setup\(\);)Tj
+-17.4 -1.1 TD
+(113:)Tj
+T*
+[(114:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(115:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * Returns whether or not the system UI is visible.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(116:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(117:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(abstract)Tj
+/TT4 1 Tf
+0 g
+4.8 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( isVisible\(\);)Tj
+-19.2 -1.1 TD
+(118:)Tj
+T*
+[(119:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(120:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * Hide the system UI.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(121:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(122:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(abstract)Tj
+/TT4 1 Tf
+0 g
+4.8 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( hide\(\);)Tj
+-17.4 -1.1 TD
+(123:)Tj
+T*
+[(124:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(125:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * Show the system UI.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(126:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(127:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(abstract)Tj
+/TT4 1 Tf
+0 g
+4.8 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( show\(\);)Tj
+-17.4 -1.1 TD
+(128:)Tj
+T*
+[(129:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(130:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * Toggle the visibility of the system UI.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(131:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(132:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( toggle\(\) {)Tj
+-12 -1.1 TD
+[(133:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(isVisible\(\)\) {)Tj
+-9 -1.1 TD
+[(134:)-599.6(            hide\(\);)]TJ
+T*
+[(135:)-599.6(        } )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9 0 TD
+(else)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( {)Tj
+-11.4 -1.1 TD
+[(136:)-599.6(            show\(\);)]TJ
+T*
+[(137:)-599.6(        })]TJ
+T*
+[(138:)-599.6(    })]TJ
+T*
+(139:)Tj
+T*
+[(140:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(141:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * Registers a callback, to be triggered when the system UI visibility)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(142:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * changes.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(143:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(144:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setOnVisibilityChangeListener\(OnVisibilityChangeListener listener\) {)Tj
+ET
+endstream
+endobj
+14 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+16 0 obj
+<<
+/Length 2953
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(SystemUiHider.java)-23597.5(spawrks 09/18/14)-29598.4(1-4/4\(4\))]TJ
+/TT4 1 Tf
+1.3 -1.6333 TD
+[(145:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(listener == )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(null)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(\) {)Tj
+-19.8 -1.1 TD
+[(146:)-599.6(            listener = sDummyListener;)]TJ
+T*
+[(147:)-599.6(        })]TJ
+T*
+(148:)Tj
+T*
+[(149:)-599.6(        mOnVisibilityChangeListener = listener;)]TJ
+T*
+[(150:)-599.6(    })]TJ
+T*
+(151:)Tj
+T*
+[(152:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(153:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * A dummy no-op callback for use when there is no other listener set.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(154:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(155:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( OnVisibilityChangeListener sDummyListener = )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+27 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( OnVisibilityChangeListener\(\) {)Tj
+-42.6 -1.1 TD
+[(156:)-599.6(        @Override)]TJ
+T*
+[(157:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( onVisibilityChange\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( visible\) {)Tj
+-30.6 -1.1 TD
+[(158:)-599.6(        })]TJ
+T*
+[(159:)-599.6(    };)]TJ
+T*
+(160:)Tj
+T*
+[(161:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(162:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * A callback interface used to listen for system UI visibility changes.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(163:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(164:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(interface)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( OnVisibilityChangeListener {)Tj
+-15 -1.1 TD
+[(165:)-599.6(        )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+7.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-7.8 -1.1 TD
+(166:)Tj
+/TT6 1 Tf
+3 0 TD
+(         * Called when the system UI visibility has changed.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(167:)Tj
+/TT6 1 Tf
+3 0 TD
+(         * )Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(168:)Tj
+/TT6 1 Tf
+3 0 TD
+(         * @param visible True if the system UI is visible.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(169:)Tj
+/TT6 1 Tf
+3 0 TD
+(         */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(170:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( onVisibilityChange\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( visible\);)Tj
+-30.6 -1.1 TD
+[(171:)-599.6(    })]TJ
+T*
+[(172:)-599.6(})]TJ
+ET
+endstream
+endobj
+17 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+19 0 obj
+<<
+/Length 4873
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(SystemUiHiderBase.java)-21197.1(spawrks 09/18/14)-29598.4(2-1/2\(5\))]TJ
+/TT4 1 Tf
+2.5 -1.6333 TD
+(1:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(package)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( com.delta.bartalk.util;)Tj
+-6 -1.1 TD
+(2:)Tj
+T*
+(3:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.app.Activity;)Tj
+-5.4 -1.1 TD
+(4:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.view.View;)Tj
+-5.4 -1.1 TD
+(5:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.view.WindowManager;)Tj
+-5.4 -1.1 TD
+(6:)Tj
+T*
+(7:)Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-1.8 -1.1 TD
+(8:)Tj
+/TT6 1 Tf
+1.8 0 TD
+( * A base implementation of {@link SystemUiHider}. Uses APIs available in all)Tj
+/TT4 1 Tf
+-1.8 -1.1 TD
+(9:)Tj
+/TT6 1 Tf
+1.8 0 TD
+( * API levels to show and hide the status bar.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(10:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+(11:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(class)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( SystemUiHiderBase )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(extends)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( SystemUiHider {)Tj
+-25.2 -1.1 TD
+[(12:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(13:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * Whether or not the system UI is currently visible. This is a cached value)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(14:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * from calls to {@link #hide\(\)} and {@link #show\(\)}.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(15:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(16:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( mVisible = )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(true)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-23.4 -1.1 TD
+(17:)Tj
+T*
+[(18:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(19:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * Constructor not intended to be called by clients. Use)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(20:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * {@link SystemUiHider#getInstance} to obtain an instance.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(21:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(22:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(protected)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( SystemUiHiderBase\(Activity activity, View anchorView, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+33 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( flags\) {)Tj
+-45 -1.1 TD
+[(23:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(\(activity, anchorView, flags\);)Tj
+-10.2 -1.1 TD
+[(24:)-599.7(    })]TJ
+T*
+(25:)Tj
+T*
+[(26:)-599.7(    @Override)]TJ
+T*
+[(27:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setup\(\) {)Tj
+-11.4 -1.1 TD
+[(28:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(\(mFlags & FLAG_LAYOUT_IN_SCREEN_OLDER_DEVICES\) == 0\) {)Tj
+-8.4 -1.1 TD
+[(29:)-599.7(            mActivity.getWindow\(\).setFlags\()]TJ
+T*
+[(30:)-599.7(                    WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN)]TJ
+T*
+[(31:)-599.7(                            | WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,)]TJ
+T*
+[(32:)-599.7(                    WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN)]TJ
+T*
+[(33:)-599.7(                            | WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS\);)]TJ
+T*
+[(34:)-599.7(        })]TJ
+T*
+[(35:)-599.7(    })]TJ
+T*
+(36:)Tj
+T*
+[(37:)-599.7(    @Override)]TJ
+T*
+[(38:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( isVisible\(\) {)Tj
+-13.2 -1.1 TD
+[(39:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( mVisible;)Tj
+-10.8 -1.1 TD
+[(40:)-599.7(    })]TJ
+T*
+(41:)Tj
+T*
+[(42:)-599.7(    @Override)]TJ
+T*
+[(43:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( hide\(\) {)Tj
+-11.4 -1.1 TD
+[(44:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(\(mFlags & FLAG_FULLSCREEN\) != 0\) {)Tj
+-8.4 -1.1 TD
+[(45:)-599.7(            mActivity.getWindow\(\).setFlags\()]TJ
+T*
+[(46:)-599.7(                    WindowManager.LayoutParams.FLAG_FULLSCREEN,)]TJ
+T*
+[(47:)-599.7(                    WindowManager.LayoutParams.FLAG_FULLSCREEN\);)]TJ
+T*
+[(48:)-599.7(        })]TJ
+ET
+endstream
+endobj
+20 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+22 0 obj
+<<
+/Length 1459
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(SystemUiHiderBase.java)-21197.1(spawrks 09/18/14)-29598.4(2-2/2\(6\))]TJ
+/TT4 1 Tf
+1.9 -1.6333 TD
+[(49:)-599.7(        mOnVisibilityChangeListener.onVisibilityChange\()]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+35.4 0 TD
+(false)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(\);)Tj
+-38.4 -1.1 TD
+[(50:)-599.7(        mVisible = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+13.8 0 TD
+(false)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(;)Tj
+-16.8 -1.1 TD
+[(51:)-599.7(    })]TJ
+T*
+(52:)Tj
+T*
+[(53:)-599.7(    @Override)]TJ
+T*
+[(54:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( show\(\) {)Tj
+-11.4 -1.1 TD
+[(55:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(\(mFlags & FLAG_FULLSCREEN\) != 0\) {)Tj
+-8.4 -1.1 TD
+[(56:)-599.7(            mActivity.getWindow\(\).setFlags\()]TJ
+T*
+[(57:)-599.7(                    0,)]TJ
+T*
+[(58:)-599.7(                    WindowManager.LayoutParams.FLAG_FULLSCREEN\);)]TJ
+T*
+[(59:)-599.7(        })]TJ
+T*
+[(60:)-599.7(        mOnVisibilityChangeListener.onVisibilityChange\()]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+35.4 0 TD
+(true)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-37.8 -1.1 TD
+[(61:)-599.7(        mVisible = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+13.8 0 TD
+(true)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-16.2 -1.1 TD
+[(62:)-599.7(    })]TJ
+T*
+[(63:)-599.7(})]TJ
+ET
+endstream
+endobj
+23 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+25 0 obj
+<<
+/Length 5288
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(SystemUiHiderHoneycomb.java)-18196.6(spawrks 09/18/14)-29598.4(3-1/3\(7\))]TJ
+/TT4 1 Tf
+2.5 -1.6333 TD
+(1:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(package)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( com.delta.bartalk.util;)Tj
+-6 -1.1 TD
+(2:)Tj
+T*
+(3:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.annotation.TargetApi;)Tj
+-5.4 -1.1 TD
+(4:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.app.Activity;)Tj
+-5.4 -1.1 TD
+(5:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.os.Build;)Tj
+-5.4 -1.1 TD
+(6:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.view.View;)Tj
+-5.4 -1.1 TD
+(7:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.view.WindowManager;)Tj
+-5.4 -1.1 TD
+(8:)Tj
+T*
+(9:)Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+1.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(10:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * An API 11+ implementation of {@link SystemUiHider}. Uses APIs available in)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(11:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * Honeycomb and later \(specifically {@link View#setSystemUiVisibility\(int\)}\) to)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(12:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * show and hide the system UI.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(13:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(14:)-599.7(@TargetApi\(Build.VERSION_CODES.HONEYCOMB\))]TJ
+T*
+(15:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(class)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( SystemUiHiderHoneycomb )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(extends)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( SystemUiHiderBase {)Tj
+-28.2 -1.1 TD
+[(16:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(17:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * Flags for {@link View#setSystemUiVisibility\(int\)} to use when showing the)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(18:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * system UI.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(19:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(20:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( mShowFlags;)Tj
+-11.4 -1.1 TD
+(21:)Tj
+T*
+[(22:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(23:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * Flags for {@link View#setSystemUiVisibility\(int\)} to use when hiding the)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(24:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * system UI.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(25:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(26:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( mHideFlags;)Tj
+-11.4 -1.1 TD
+(27:)Tj
+T*
+[(28:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(29:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * Flags to test against the first parameter in)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(30:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * {@link android.view.View.OnSystemUiVisibilityChangeListener#onSystemUiVisibilityChange\(int\)})Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(31:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * to determine the system UI visibility state.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(32:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(33:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( mTestFlags;)Tj
+-11.4 -1.1 TD
+(34:)Tj
+T*
+[(35:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(36:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * Whether or not the system UI is currently visible. This is cached from)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(37:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * {@link android.view.View.OnSystemUiVisibilityChangeListener}.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(38:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(39:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( mVisible = )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(true)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-23.4 -1.1 TD
+(40:)Tj
+T*
+[(41:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(42:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * Constructor not intended to be called by clients. Use)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(43:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * {@link SystemUiHider#getInstance} to obtain an instance.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(44:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(45:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(protected)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( SystemUiHiderHoneycomb\(Activity activity, View anchorView, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+36 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( flags\) {)Tj
+-48 -1.1 TD
+[(46:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(\(activity, anchorView, flags\);)Tj
+-10.2 -1.1 TD
+(47:)Tj
+T*
+[(48:)-599.7(        mShowFlags = View.SYSTEM_UI_FLAG_VISIBLE;)]TJ
+ET
+endstream
+endobj
+26 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+28 0 obj
+<<
+/Length 4522
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(SystemUiHiderHoneycomb.java)-18196.6(spawrks 09/18/14)-29598.4(3-2/3\(8\))]TJ
+/TT4 1 Tf
+1.9 -1.6333 TD
+[(49:)-599.7(        mHideFlags = View.SYSTEM_UI_FLAG_LOW_PROFILE;)]TJ
+0 -1.1 TD
+[(50:)-599.7(        mTestFlags = View.SYSTEM_UI_FLAG_LOW_PROFILE;)]TJ
+T*
+(51:)Tj
+T*
+[(52:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(\(mFlags & FLAG_FULLSCREEN\) != 0\) {)Tj
+-8.4 -1.1 TD
+[(53:)-599.7(            )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+9.6 0 TD
+(// If the client requested fullscreen, add flags relevant to hiding)Tj
+/TT4 1 Tf
+-9.6 -1.1 TD
+(54:)Tj
+0 g
+2.4 0 TD
+(            )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// the status bar. Note that some of these constants are new as of)Tj
+/TT4 1 Tf
+-9.6 -1.1 TD
+(55:)Tj
+0 g
+2.4 0 TD
+(            )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// API 16 \(Jelly Bean\). It is safe to use them, as they are inlined)Tj
+/TT4 1 Tf
+-9.6 -1.1 TD
+(56:)Tj
+0 g
+2.4 0 TD
+(            )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// at compile-time and do nothing on pre-Jelly Bean devices.)Tj
+/TT4 1 Tf
+-9.6 -1.1 TD
+(57:)Tj
+0 g
+2.4 0 TD
+(            mShowFlags |= View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;)Tj
+-2.4 -1.1 TD
+[(58:)-599.7(            mHideFlags |= View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)]TJ
+T*
+[(59:)-599.7(                    | View.SYSTEM_UI_FLAG_FULLSCREEN;)]TJ
+T*
+[(60:)-599.7(        })]TJ
+T*
+(61:)Tj
+T*
+[(62:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(\(mFlags & FLAG_HIDE_NAVIGATION\) != 0\) {)Tj
+-8.4 -1.1 TD
+[(63:)-599.7(            )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+9.6 0 TD
+(// If the client requested hiding navigation, add relevant flags.)Tj
+/TT4 1 Tf
+-9.6 -1.1 TD
+(64:)Tj
+0 g
+2.4 0 TD
+(            mShowFlags |= View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;)Tj
+-2.4 -1.1 TD
+[(65:)-599.7(            mHideFlags |= View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION)]TJ
+T*
+[(66:)-599.7(                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;)]TJ
+T*
+[(67:)-599.7(            mTestFlags |= View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;)]TJ
+T*
+[(68:)-599.7(        })]TJ
+T*
+[(69:)-599.7(    })]TJ
+T*
+(70:)Tj
+T*
+[(71:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/** {@inheritDoc} */)Tj
+/TT4 1 Tf
+0 g
+-4.8 -1.1 TD
+[(72:)-599.7(    @Override)]TJ
+T*
+[(73:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setup\(\) {)Tj
+-11.4 -1.1 TD
+[(74:)-599.7(        mAnchorView.setOnSystemUiVisibilityChangeListener\(mSystemUiVisibilityChangeListener\);)]TJ
+T*
+[(75:)-599.7(    })]TJ
+T*
+(76:)Tj
+T*
+[(77:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/** {@inheritDoc} */)Tj
+/TT4 1 Tf
+0 g
+-4.8 -1.1 TD
+[(78:)-599.7(    @Override)]TJ
+T*
+[(79:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( hide\(\) {)Tj
+-11.4 -1.1 TD
+[(80:)-599.7(        mAnchorView.setSystemUiVisibility\(mHideFlags\);)]TJ
+T*
+[(81:)-599.7(    })]TJ
+T*
+(82:)Tj
+T*
+[(83:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/** {@inheritDoc} */)Tj
+/TT4 1 Tf
+0 g
+-4.8 -1.1 TD
+[(84:)-599.7(    @Override)]TJ
+T*
+[(85:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( show\(\) {)Tj
+-11.4 -1.1 TD
+[(86:)-599.7(        mAnchorView.setSystemUiVisibility\(mShowFlags\);)]TJ
+T*
+[(87:)-599.7(    })]TJ
+T*
+(88:)Tj
+T*
+[(89:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/** {@inheritDoc} */)Tj
+/TT4 1 Tf
+0 g
+-4.8 -1.1 TD
+[(90:)-599.7(    @Override)]TJ
+T*
+[(91:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( isVisible\(\) {)Tj
+-13.2 -1.1 TD
+[(92:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( mVisible;)Tj
+-10.8 -1.1 TD
+[(93:)-599.7(    })]TJ
+T*
+(94:)Tj
+T*
+[(95:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( View.OnSystemUiVisibilityChangeListener mSystemUiVisibilityChangeListener)Tj
+-9 -1.1 TD
+[(96:)-599.7(            = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.8 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( View.OnSystemUiVisibilityChangeListener\(\) {)Tj
+ET
+endstream
+endobj
+29 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+31 0 obj
+<<
+/Length 4151
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(SystemUiHiderHoneycomb.java)-18196.6(spawrks 09/18/14)-29598.4(3-3/3\(9\))]TJ
+/TT4 1 Tf
+1.9 -1.6333 TD
+[(97:)-599.7(        @Override)]TJ
+0 -1.1 TD
+[(98:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( onSystemUiVisibilityChange\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+16.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( vis\) {)Tj
+-32.4 -1.1 TD
+[(99:)-599.7(            )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+9.6 0 TD
+(// Test against mTestFlags to see if the system UI is visible.)Tj
+/TT4 1 Tf
+-10.2 -1.1 TD
+(100:)Tj
+0 g
+3 0 TD
+(            )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(\(vis & mTestFlags\) != 0\) {)Tj
+-11.4 -1.1 TD
+[(101:)-599.6(                )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN\) {)Tj
+-13.8 -1.1 TD
+[(102:)-599.6(                    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+15 0 TD
+(// Pre-Jelly Bean, we must manually hide the action bar)Tj
+/TT4 1 Tf
+-15 -1.1 TD
+(103:)Tj
+0 g
+3 0 TD
+(                    )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+12 0 TD
+(// and use the old window flags API.)Tj
+/TT4 1 Tf
+-15 -1.1 TD
+(104:)Tj
+0 g
+3 0 TD
+(                    mActivity.getActionBar\(\).hide\(\);)Tj
+-3 -1.1 TD
+[(105:)-599.6(                    mActivity.getWindow\(\).setFlags\()]TJ
+T*
+[(106:)-599.6(                            WindowManager.LayoutParams.FLAG_FULLSCREEN,)]TJ
+T*
+[(107:)-599.6(                            WindowManager.LayoutParams.FLAG_FULLSCREEN\);)]TJ
+T*
+[(108:)-599.6(                })]TJ
+T*
+(109:)Tj
+T*
+[(110:)-599.6(                )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+12.6 0 TD
+(// Trigger the registered listener and cache the visibility)Tj
+/TT4 1 Tf
+-12.6 -1.1 TD
+(111:)Tj
+0 g
+3 0 TD
+(                )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+9.6 0 TD
+(// state.)Tj
+/TT4 1 Tf
+-12.6 -1.1 TD
+(112:)Tj
+0 g
+3 0 TD
+(                mOnVisibilityChangeListener.onVisibilityChange\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+37.8 0 TD
+(false)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(\);)Tj
+-43.8 -1.1 TD
+[(113:)-599.6(                mVisible = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+19.2 0 TD
+(false)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(;)Tj
+-22.2 -1.1 TD
+(114:)Tj
+T*
+[(115:)-599.6(            } )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(else)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( {)Tj
+-13.8 -1.1 TD
+[(116:)-599.6(                mAnchorView.setSystemUiVisibility\(mShowFlags\);)]TJ
+T*
+[(117:)-599.6(                )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN\) {)Tj
+-13.8 -1.1 TD
+[(118:)-599.6(                    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+15 0 TD
+(// Pre-Jelly Bean, we must manually show the action bar)Tj
+/TT4 1 Tf
+-15 -1.1 TD
+(119:)Tj
+0 g
+3 0 TD
+(                    )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+12 0 TD
+(// and use the old window flags API.)Tj
+/TT4 1 Tf
+-15 -1.1 TD
+(120:)Tj
+0 g
+3 0 TD
+(                    mActivity.getActionBar\(\).show\(\);)Tj
+-3 -1.1 TD
+[(121:)-599.6(                    mActivity.getWindow\(\).setFlags\()]TJ
+T*
+[(122:)-599.6(                            0,)]TJ
+T*
+[(123:)-599.6(                            WindowManager.LayoutParams.FLAG_FULLSCREEN\);)]TJ
+T*
+[(124:)-599.6(                })]TJ
+T*
+(125:)Tj
+T*
+[(126:)-599.6(                )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+12.6 0 TD
+(// Trigger the registered listener and cache the visibility)Tj
+/TT4 1 Tf
+-12.6 -1.1 TD
+(127:)Tj
+0 g
+3 0 TD
+(                )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+9.6 0 TD
+(// state.)Tj
+/TT4 1 Tf
+-12.6 -1.1 TD
+(128:)Tj
+0 g
+3 0 TD
+(                mOnVisibilityChangeListener.onVisibilityChange\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+37.8 0 TD
+(true)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-43.2 -1.1 TD
+[(129:)-599.6(                mVisible = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+19.2 0 TD
+(true)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-21.6 -1.1 TD
+[(130:)-599.6(            })]TJ
+T*
+[(131:)-599.6(        })]TJ
+T*
+[(132:)-599.6(    };)]TJ
+T*
+[(133:)-599.6(})]TJ
+ET
+endstream
+endobj
+32 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+34 0 obj
+<<
+/Length 4984
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(AutoResizeTextView.java)-20597(spawrks 09/18/14)-28998.3(4-1/7\(10\))]TJ
+/TT4 1 Tf
+2.5 -1.6333 TD
+(1:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(package)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( com.delta.bartalk;)Tj
+-6 -1.1 TD
+(2:)Tj
+T*
+(3:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.annotation.TargetApi;)Tj
+-5.4 -1.1 TD
+(4:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.content.Context;)Tj
+-5.4 -1.1 TD
+(5:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.content.res.Resources;)Tj
+-5.4 -1.1 TD
+(6:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.graphics.RectF;)Tj
+-5.4 -1.1 TD
+(7:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.os.Build;)Tj
+-5.4 -1.1 TD
+(8:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.text.Layout.Alignment;)Tj
+-5.4 -1.1 TD
+(9:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.text.StaticLayout;)Tj
+-6 -1.1 TD
+(10:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.text.TextPaint;)Tj
+-6 -1.1 TD
+(11:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.util.AttributeSet;)Tj
+-6 -1.1 TD
+(12:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.util.SparseIntArray;)Tj
+-6 -1.1 TD
+(13:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.util.TypedValue;)Tj
+-6 -1.1 TD
+(14:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.widget.TextView;)Tj
+-6 -1.1 TD
+(15:)Tj
+T*
+(16:)Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+2.4 0 TD
+(/*)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(17:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(  Taken from http://stackoverflow.com/users/1112882/m-wajeeh ís code on Stack Overflow)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(18:)Tj
+T*
+(19:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(  here:)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(20:)Tj
+T*
+(21:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(  http://stackoverflow.com/questions/5033012/auto-scale-textview-text-to-fit-within-bounds/17782522#17782522)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(22:)Tj
+T*
+(23:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(  m-wajeeh provided a completely amazingly robust widget to handle auto-resizing!)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(24:)Tj
+T*
+(25:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+(26:)Tj
+T*
+(27:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(class)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( AutoResizeTextView )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(extends)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( TextView {)Tj
+-25.8 -1.1 TD
+[(28:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(interface)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( SizeTester {)Tj
+-15 -1.1 TD
+[(29:)-599.7(        )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(/**)Tj
+/TT4 1 Tf
+-7.2 -1.1 TD
+(30:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(         *)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(31:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(         * @param suggestedSize)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(32:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(         *            Size of text to be tested)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(33:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(         * @param availableSpace)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(34:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(         *            available space in which text must fit)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(35:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(         * @return an integer < 0 if after applying {@code suggestedSize} to)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(36:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(         *         text, it takes less space than {@code availableSpace}, > 0)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(37:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(         *         otherwise)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(38:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(         */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(39:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( onTestSize\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( suggestedSize, RectF availableSpace\);)Tj
+-22.2 -1.1 TD
+[(40:)-599.7(    })]TJ
+T*
+(41:)Tj
+T*
+[(42:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( RectF mTextRect = )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( RectF\(\);)Tj
+-22.2 -1.1 TD
+(43:)Tj
+T*
+[(44:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( RectF mAvailableSpaceRect;)Tj
+-9 -1.1 TD
+(45:)Tj
+T*
+[(46:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( SparseIntArray mTextCachedSizes;)Tj
+-9 -1.1 TD
+(47:)Tj
+T*
+[(48:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( TextPaint mPaint;)Tj
+ET
+endstream
+endobj
+35 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+37 0 obj
+<<
+/Length 5469
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(AutoResizeTextView.java)-20597(spawrks 09/18/14)-28998.3(4-2/7\(11\))]TJ
+/TT4 1 Tf
+1.9 -1.6333 TD
+(49:)Tj
+0 -1.1 TD
+[(50:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(float)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( mMaxTextSize;)Tj
+-12.6 -1.1 TD
+(51:)Tj
+T*
+[(52:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(float)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( mSpacingMult = 1.0f;)Tj
+-12.6 -1.1 TD
+(53:)Tj
+T*
+[(54:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(float)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( mSpacingAdd = 0.0f;)Tj
+-12.6 -1.1 TD
+(55:)Tj
+T*
+[(56:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(float)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( mMinTextSize = 20;)Tj
+-12.6 -1.1 TD
+(57:)Tj
+T*
+[(58:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( mWidthLimit;)Tj
+-11.4 -1.1 TD
+(59:)Tj
+T*
+[(60:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( NO_LINE_LIMIT = -1;)Tj
+-19.2 -1.1 TD
+[(61:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( mMaxLines;)Tj
+-11.4 -1.1 TD
+(62:)Tj
+T*
+[(63:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( mEnableSizeCache = )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(true)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-28.2 -1.1 TD
+[(64:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( mInitiallized;)Tj
+-13.8 -1.1 TD
+(65:)Tj
+T*
+[(66:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( AutoResizeTextView\(Context context\) {)Tj
+-8.4 -1.1 TD
+[(67:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(\(context\);)Tj
+-10.2 -1.1 TD
+[(68:)-599.7(        initialize\(\);)]TJ
+T*
+[(69:)-599.7(    })]TJ
+T*
+(70:)Tj
+T*
+[(71:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( AutoResizeTextView\(Context context, AttributeSet attrs\) {)Tj
+-8.4 -1.1 TD
+[(72:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(\(context, attrs\);)Tj
+-10.2 -1.1 TD
+[(73:)-599.7(        initialize\(\);)]TJ
+T*
+[(74:)-599.7(    })]TJ
+T*
+(75:)Tj
+T*
+[(76:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( AutoResizeTextView\(Context context, AttributeSet attrs, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+34.2 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( defStyle\) {)Tj
+-44.4 -1.1 TD
+[(77:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(\(context, attrs, defStyle\);)Tj
+-10.2 -1.1 TD
+[(78:)-599.7(        initialize\(\);)]TJ
+T*
+[(79:)-599.7(    })]TJ
+T*
+(80:)Tj
+T*
+[(81:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( initialize\(\) {)Tj
+-12 -1.1 TD
+[(82:)-599.7(        mPaint = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( TextPaint\(getPaint\(\)\);)Tj
+-14.4 -1.1 TD
+[(83:)-599.7(        mMaxTextSize = getTextSize\(\);)]TJ
+T*
+[(84:)-599.7(        mAvailableSpaceRect = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+20.4 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( RectF\(\);)Tj
+-22.2 -1.1 TD
+[(85:)-599.7(        mTextCachedSizes = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+18.6 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( SparseIntArray\(\);)Tj
+-20.4 -1.1 TD
+[(86:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(mMaxLines == 0\) {)Tj
+-8.4 -1.1 TD
+[(87:)-599.7(            )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+9.6 0 TD
+(// no value was assigned during construction)Tj
+/TT4 1 Tf
+-9.6 -1.1 TD
+(88:)Tj
+0 g
+2.4 0 TD
+(            mMaxLines = NO_LINE_LIMIT;)Tj
+-2.4 -1.1 TD
+[(89:)-599.7(        })]TJ
+T*
+[(90:)-599.7(        mInitiallized = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+16.8 0 TD
+(true)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-19.2 -1.1 TD
+[(91:)-599.7(    })]TJ
+T*
+(92:)Tj
+T*
+[(93:)-599.7(    @Override)]TJ
+T*
+[(94:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setText\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( CharSequence text, BufferType type\) {)Tj
+-19.8 -1.1 TD
+[(95:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(.setText\(text, type\);)Tj
+-10.2 -1.1 TD
+[(96:)-599.7(        adjustTextSize\(text.toString\(\)\);)]TJ
+ET
+endstream
+endobj
+38 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+42 0 obj
+<<
+/Length 4270
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(AutoResizeTextView.java)-20597(spawrks 09/18/14)-28998.3(4-3/7\(12\))]TJ
+/TT4 1 Tf
+1.9 -1.6333 TD
+[(97:)-599.7(    })]TJ
+0 -1.1 TD
+(98:)Tj
+T*
+[(99:)-599.7(    @Override)]TJ
+-0.6 -1.1 TD
+[(100:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setTextSize\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(float)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( size\) {)Tj
+-22.8 -1.1 TD
+[(101:)-599.6(        mMaxTextSize = size;)]TJ
+T*
+[(102:)-599.6(        mTextCachedSizes.clear\(\);)]TJ
+T*
+[(103:)-599.6(        adjustTextSize\(getText\(\).toString\(\)\);)]TJ
+T*
+[(104:)-599.6(    })]TJ
+T*
+(105:)Tj
+T*
+[(106:)-599.6(    @Override)]TJ
+T*
+[(107:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setMaxLines\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( maxlines\) {)Tj
+-21.6 -1.1 TD
+[(108:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(.setMaxLines\(maxlines\);)Tj
+-10.8 -1.1 TD
+[(109:)-599.6(        mMaxLines = maxlines;)]TJ
+T*
+[(110:)-599.6(        reAdjust\(\);)]TJ
+T*
+[(111:)-599.6(    })]TJ
+T*
+(112:)Tj
+T*
+[(113:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( getMaxLines\(\) {)Tj
+-11.4 -1.1 TD
+[(114:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( mMaxLines;)Tj
+-11.4 -1.1 TD
+[(115:)-599.6(    })]TJ
+T*
+(116:)Tj
+T*
+[(117:)-599.6(    @Override)]TJ
+T*
+[(118:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setSingleLine\(\) {)Tj
+-12 -1.1 TD
+[(119:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(.setSingleLine\(\);)Tj
+-10.8 -1.1 TD
+[(120:)-599.6(        mMaxLines = 1;)]TJ
+T*
+[(121:)-599.6(        reAdjust\(\);)]TJ
+T*
+[(122:)-599.6(    })]TJ
+T*
+(123:)Tj
+T*
+[(124:)-599.6(    @Override)]TJ
+T*
+[(125:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setSingleLine\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( singleLine\) {)Tj
+-25.2 -1.1 TD
+[(126:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(.setSingleLine\(singleLine\);)Tj
+-10.8 -1.1 TD
+[(127:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(singleLine\) {)Tj
+-9 -1.1 TD
+[(128:)-599.6(            mMaxLines = 1;)]TJ
+T*
+[(129:)-599.6(        } )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9 0 TD
+(else)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( {)Tj
+-11.4 -1.1 TD
+[(130:)-599.6(            mMaxLines = NO_LINE_LIMIT;)]TJ
+T*
+[(131:)-599.6(        })]TJ
+T*
+[(132:)-599.6(        reAdjust\(\);)]TJ
+T*
+[(133:)-599.6(    })]TJ
+T*
+(134:)Tj
+T*
+[(135:)-599.6(    @Override)]TJ
+T*
+[(136:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setLines\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( lines\) {)Tj
+-19.8 -1.1 TD
+[(137:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(.setLines\(lines\);)Tj
+-10.8 -1.1 TD
+[(138:)-599.6(        mMaxLines = lines;)]TJ
+T*
+[(139:)-599.6(        reAdjust\(\);)]TJ
+T*
+[(140:)-599.6(    })]TJ
+T*
+(141:)Tj
+T*
+[(142:)-599.6(    @Override)]TJ
+T*
+[(143:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setTextSize\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( unit, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(float)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( size\) {)Tj
+-28.8 -1.1 TD
+[(144:)-599.6(        Context c = getContext\(\);)]TJ
+ET
+endstream
+endobj
+43 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+45 0 obj
+<<
+/Length 4578
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(AutoResizeTextView.java)-20597(spawrks 09/18/14)-28998.3(4-4/7\(13\))]TJ
+/TT4 1 Tf
+1.3 -1.6333 TD
+[(145:)-599.6(        Resources r;)]TJ
+0 -1.1 TD
+(146:)Tj
+T*
+[(147:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(c == )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.2 0 TD
+(null)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(\))Tj
+-15.6 -1.1 TD
+[(148:)-599.6(            r = Resources.getSystem\(\);)]TJ
+T*
+[(149:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(else)Tj
+/TT4 1 Tf
+0 g
+-7.8 -1.1 TD
+[(150:)-599.6(            r = c.getResources\(\);)]TJ
+T*
+[(151:)-599.6(        mMaxTextSize = TypedValue.applyDimension\(unit, size,)]TJ
+T*
+[(152:)-599.6(                r.getDisplayMetrics\(\)\);)]TJ
+T*
+[(153:)-599.6(        mTextCachedSizes.clear\(\);)]TJ
+T*
+[(154:)-599.6(        adjustTextSize\(getText\(\).toString\(\)\);)]TJ
+T*
+[(155:)-599.6(    })]TJ
+T*
+(156:)Tj
+T*
+[(157:)-599.6(    @Override)]TJ
+T*
+[(158:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setLineSpacing\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(float)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( add, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+3.6 0 TD
+(float)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( mult\) {)Tj
+-31.2 -1.1 TD
+[(159:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(.setLineSpacing\(add, mult\);)Tj
+-10.8 -1.1 TD
+[(160:)-599.6(        mSpacingMult = mult;)]TJ
+T*
+[(161:)-599.6(        mSpacingAdd = add;)]TJ
+T*
+[(162:)-599.6(    })]TJ
+T*
+(163:)Tj
+T*
+[(164:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(165:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * Set the lower text size limit and invalidate the view)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(166:)Tj
+/TT6 1 Tf
+3 0 TD
+(     *)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(167:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * @param minTextSize)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(168:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(169:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( setMinTextSize\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(float)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( minTextSize\) {)Tj
+-24.6 -1.1 TD
+[(170:)-599.6(        mMinTextSize = minTextSize;)]TJ
+T*
+[(171:)-599.6(        reAdjust\(\);)]TJ
+T*
+[(172:)-599.6(    })]TJ
+T*
+(173:)Tj
+T*
+[(174:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( reAdjust\(\) {)Tj
+-12.6 -1.1 TD
+[(175:)-599.6(        adjustTextSize\(getText\(\).toString\(\)\);)]TJ
+T*
+[(176:)-599.6(    })]TJ
+T*
+(177:)Tj
+T*
+[(178:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( adjustTextSize\(String string\) {)Tj
+-12.6 -1.1 TD
+[(179:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(!mInitiallized\) {)Tj
+-9 -1.1 TD
+[(180:)-599.6(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+(;)Tj
+-13.8 -1.1 TD
+[(181:)-599.6(        })]TJ
+T*
+[(182:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( startSize = \()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+(\) mMinTextSize;)Tj
+-19.8 -1.1 TD
+[(183:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( heightLimit = getMeasuredHeight\(\) - getCompoundPaddingBottom\(\))Tj
+-9.6 -1.1 TD
+[(184:)-599.6(                - getCompoundPaddingTop\(\);)]TJ
+T*
+[(185:)-599.6(        mWidthLimit = getMeasuredWidth\(\) - getCompoundPaddingLeft\(\))]TJ
+T*
+[(186:)-599.6(                - getCompoundPaddingRight\(\);)]TJ
+T*
+[(187:)-599.6(        mAvailableSpaceRect.right = mWidthLimit;)]TJ
+T*
+[(188:)-599.6(        mAvailableSpaceRect.bottom = heightLimit;)]TJ
+T*
+[(189:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(.setTextSize\()Tj
+-10.8 -1.1 TD
+[(190:)-599.6(                TypedValue.COMPLEX_UNIT_PX,)]TJ
+T*
+[(191:)-599.6(                efficientTextSizeSearch\(startSize, \()]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+34.2 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+(\) mMaxTextSize,)Tj
+-36 -1.1 TD
+[(192:)-599.6(                        mSizeTester, mAvailableSpaceRect\)\);)]TJ
+ET
+endstream
+endobj
+46 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+48 0 obj
+<<
+/Length 5343
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(AutoResizeTextView.java)-20597(spawrks 09/18/14)-28998.3(4-5/7\(14\))]TJ
+/TT4 1 Tf
+1.3 -1.6333 TD
+[(193:)-599.6(    })]TJ
+0 -1.1 TD
+(194:)Tj
+T*
+[(195:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( SizeTester mSizeTester = )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+15.6 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( SizeTester\(\) {)Tj
+-30.6 -1.1 TD
+[(196:)-599.6(        @TargetApi\(Build.VERSION_CODES.JELLY_BEAN\))]TJ
+T*
+[(197:)-599.6(        @Override)]TJ
+T*
+[(198:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( onTestSize\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( suggestedSize, RectF availableSPace\) {)Tj
+-22.8 -1.1 TD
+[(199:)-599.6(            mPaint.setTextSize\(suggestedSize\);)]TJ
+T*
+[(200:)-599.6(            String text = getText\(\).toString\(\);)]TJ
+T*
+[(201:)-599.6(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( singleline = getMaxLines\(\) == 1;)Tj
+-14.4 -1.1 TD
+[(202:)-599.6(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(singleline\) {)Tj
+-11.4 -1.1 TD
+[(203:)-599.6(                mTextRect.bottom = mPaint.getFontSpacing\(\);)]TJ
+T*
+[(204:)-599.6(                mTextRect.right = mPaint.measureText\(text\);)]TJ
+T*
+[(205:)-599.6(            } )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(else)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( {)Tj
+-13.8 -1.1 TD
+[(206:)-599.6(                StaticLayout layout = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+25.8 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( StaticLayout\(text, mPaint,)Tj
+-27.6 -1.1 TD
+[(207:)-599.6(                        mWidthLimit, Alignment.ALIGN_NORMAL, mSpacingMult,)]TJ
+T*
+[(208:)-599.6(                        mSpacingAdd, )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+25.2 0 TD
+(true)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(\);)Tj
+-27.6 -1.1 TD
+[(209:)-599.6(                )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+12.6 0 TD
+(// return early if we have more lines)Tj
+/TT4 1 Tf
+-12.6 -1.1 TD
+(210:)Tj
+0 g
+3 0 TD
+(                )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(getMaxLines\(\) != NO_LINE_LIMIT)Tj
+-13.8 -1.1 TD
+[(211:)-599.6(                        && layout.getLineCount\(\) > getMaxLines\(\)\) {)]TJ
+T*
+[(212:)-599.6(                    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+15 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( 1;)Tj
+-18.6 -1.1 TD
+[(213:)-599.6(                })]TJ
+T*
+[(214:)-599.6(                mTextRect.bottom = layout.getHeight\(\);)]TJ
+T*
+[(215:)-599.6(                )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( maxWidth = -1;)Tj
+-14.4 -1.1 TD
+[(216:)-599.6(                )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(for)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( \()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.2 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( i = 0; i < layout.getLineCount\(\); i++\) {)Tj
+-17.4 -1.1 TD
+[(217:)-599.6(                    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+15 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(maxWidth < layout.getLineWidth\(i\)\) {)Tj
+-16.2 -1.1 TD
+[(218:)-599.6(                        maxWidth = \()]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+24.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+(\) layout.getLineWidth\(i\);)Tj
+-26.4 -1.1 TD
+[(219:)-599.6(                    })]TJ
+T*
+[(220:)-599.6(                })]TJ
+T*
+[(221:)-599.6(                mTextRect.right = maxWidth;)]TJ
+T*
+[(222:)-599.6(            })]TJ
+T*
+(223:)Tj
+T*
+[(224:)-599.6(            mTextRect.offsetTo\(0, 0\);)]TJ
+T*
+[(225:)-599.6(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(availableSPace.contains\(mTextRect\)\) {)Tj
+-11.4 -1.1 TD
+[(226:)-599.6(                )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+12.6 0 TD
+(// may be too small, donít worry we will find the best match)Tj
+/TT4 1 Tf
+-12.6 -1.1 TD
+(227:)Tj
+0 g
+3 0 TD
+(                )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( -1;)Tj
+-16.2 -1.1 TD
+[(228:)-599.6(            } )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(else)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( {)Tj
+-13.8 -1.1 TD
+[(229:)-599.6(                )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+12.6 0 TD
+(// too big)Tj
+/TT4 1 Tf
+-12.6 -1.1 TD
+(230:)Tj
+0 g
+3 0 TD
+(                )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( 1;)Tj
+-16.2 -1.1 TD
+[(231:)-599.6(            })]TJ
+T*
+[(232:)-599.6(        })]TJ
+T*
+[(233:)-599.6(    };)]TJ
+T*
+(234:)Tj
+T*
+[(235:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(236:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * Enables or disables size caching, enabling it will improve performance)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(237:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * where you are animating a value inside TextView. This stores the font)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(238:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * size against getText\(\).length\(\) Be careful though while enabling it as 0)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(239:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * takes more space than 1 on some fonts and so on.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(240:)Tj
+/TT6 1 Tf
+3 0 TD
+(     *)Tj
+ET
+endstream
+endobj
+49 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+51 0 obj
+<<
+/Length 5596
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(AutoResizeTextView.java)-20597(spawrks 09/18/14)-28998.3(4-6/7\(15\))]TJ
+/TT4 1 Tf
+0.698 0.133 0.133 rg
+1.3 -1.6333 TD
+(241:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * @param enable)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(242:)Tj
+/TT6 1 Tf
+3 0 TD
+(     *            enable font size caching)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(243:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(244:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( enableSizeCache\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( enable\) {)Tj
+-26.4 -1.1 TD
+[(245:)-599.6(        mEnableSizeCache = enable;)]TJ
+T*
+[(246:)-599.6(        mTextCachedSizes.clear\(\);)]TJ
+T*
+[(247:)-599.6(        adjustTextSize\(getText\(\).toString\(\)\);)]TJ
+T*
+[(248:)-599.6(    })]TJ
+T*
+(249:)Tj
+T*
+[(250:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( efficientTextSizeSearch\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+15 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( start, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( end,)Tj
+-35.4 -1.1 TD
+[(251:)-599.6(                                        SizeTester sizeTester, RectF availableSpace\) {)]TJ
+T*
+[(252:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(!mEnableSizeCache\) {)Tj
+-9 -1.1 TD
+[(253:)-599.6(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( binarySearch\(start, end, sizeTester, availableSpace\);)Tj
+-13.8 -1.1 TD
+[(254:)-599.6(        })]TJ
+T*
+[(255:)-599.6(        String text = getText\(\).toString\(\);)]TJ
+T*
+[(256:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( key = text == )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9 0 TD
+(null)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( ? 0 : text.length\(\);)Tj
+-21 -1.1 TD
+[(257:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( size = mTextCachedSizes.get\(key\);)Tj
+-9.6 -1.1 TD
+[(258:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(size != 0\) {)Tj
+-9 -1.1 TD
+[(259:)-599.6(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( size;)Tj
+-13.8 -1.1 TD
+[(260:)-599.6(        })]TJ
+T*
+[(261:)-599.6(        size = binarySearch\(start, end, sizeTester, availableSpace\);)]TJ
+T*
+[(262:)-599.6(        mTextCachedSizes.put\(key, size\);)]TJ
+T*
+[(263:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( size;)Tj
+-11.4 -1.1 TD
+[(264:)-599.6(    })]TJ
+T*
+(265:)Tj
+T*
+[(266:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( binarySearch\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+8.4 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( start, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( end, SizeTester sizeTester,)Tj
+-33 -1.1 TD
+[(267:)-599.6(                                    RectF availableSpace\) {)]TJ
+T*
+[(268:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( lastBest = start;)Tj
+-9.6 -1.1 TD
+[(269:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( lo = start;)Tj
+-9.6 -1.1 TD
+[(270:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( hi = end - 1;)Tj
+-9.6 -1.1 TD
+[(271:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( mid = 0;)Tj
+-9.6 -1.1 TD
+[(272:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(while)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( \(lo <= hi\) {)Tj
+-10.8 -1.1 TD
+[(273:)-599.6(            mid = \(lo + hi\) >>> 1;)]TJ
+T*
+[(274:)-599.6(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( midValCmp = sizeTester.onTestSize\(mid, availableSpace\);)Tj
+-12 -1.1 TD
+[(275:)-599.6(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(midValCmp < 0\) {)Tj
+-11.4 -1.1 TD
+[(276:)-599.6(                lastBest = lo;)]TJ
+T*
+[(277:)-599.6(                lo = mid + 1;)]TJ
+T*
+[(278:)-599.6(            } )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(else)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(midValCmp > 0\) {)Tj
+-15.6 -1.1 TD
+[(279:)-599.6(                hi = mid - 1;)]TJ
+T*
+[(280:)-599.6(                lastBest = hi;)]TJ
+T*
+[(281:)-599.6(            } )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(else)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( {)Tj
+-13.8 -1.1 TD
+[(282:)-599.6(                )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( mid;)Tj
+-16.2 -1.1 TD
+[(283:)-599.6(            })]TJ
+T*
+[(284:)-599.6(        })]TJ
+T*
+[(285:)-599.6(        )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+7.8 0 TD
+(// make sure to return last best)Tj
+/TT4 1 Tf
+-7.8 -1.1 TD
+(286:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// this is what should always be returned)Tj
+/TT4 1 Tf
+-7.8 -1.1 TD
+(287:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( lastBest;)Tj
+-11.4 -1.1 TD
+(288:)Tj
+ET
+endstream
+endobj
+52 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+54 0 obj
+<<
+/Length 2514
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(AutoResizeTextView.java)-20597(spawrks 09/18/14)-28998.3(4-7/7\(16\))]TJ
+/TT4 1 Tf
+1.3 -1.6333 TD
+[(289:)-599.6(    })]TJ
+0 -1.1 TD
+(290:)Tj
+T*
+[(291:)-599.6(    @Override)]TJ
+T*
+[(292:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(protected)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( onTextChanged\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( CharSequence text, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( start,)Tj
+-43.2 -1.1 TD
+[(293:)-599.6(                                 )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+22.8 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( before, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( after\) {)Tj
+-39 -1.1 TD
+[(294:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(.onTextChanged\(text, start, before, after\);)Tj
+-10.8 -1.1 TD
+[(295:)-599.6(        reAdjust\(\);)]TJ
+T*
+[(296:)-599.6(    })]TJ
+T*
+(297:)Tj
+T*
+[(298:)-599.6(    @Override)]TJ
+T*
+[(299:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(protected)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( onSizeChanged\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( width, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( height, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( oldwidth,)Tj
+-38.4 -1.1 TD
+[(300:)-599.6(                                 )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+22.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( oldheight\) {)Tj
+-24.6 -1.1 TD
+[(301:)-599.6(        mTextCachedSizes.clear\(\);)]TJ
+T*
+[(302:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(.onSizeChanged\(width, height, oldwidth, oldheight\);)Tj
+-10.8 -1.1 TD
+[(303:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(width != oldwidth || height != oldheight\) {)Tj
+-9 -1.1 TD
+[(304:)-599.6(            reAdjust\(\);)]TJ
+T*
+[(305:)-599.6(        })]TJ
+T*
+[(306:)-599.6(    })]TJ
+T*
+[(307:)-599.6(})]TJ
+ET
+endstream
+endobj
+55 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+57 0 obj
+<<
+/Length 5907
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(BartalkActivity.java)-22397.3(spawrks 09/18/14)-28998.3(5-1/4\(17\))]TJ
+/TT4 1 Tf
+2.5 -1.6333 TD
+(1:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(package)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( com.delta.bartalk;)Tj
+-6 -1.1 TD
+(2:)Tj
+T*
+(3:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( com.delta.bartalk.util.SystemUiHider;)Tj
+-5.4 -1.1 TD
+(4:)Tj
+T*
+(5:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.annotation.TargetApi;)Tj
+-5.4 -1.1 TD
+(6:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.app.ActionBar;)Tj
+-5.4 -1.1 TD
+(7:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.app.Activity;)Tj
+-5.4 -1.1 TD
+(8:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.os.Build;)Tj
+-5.4 -1.1 TD
+(9:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+1.8 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.os.Bundle;)Tj
+-6 -1.1 TD
+(10:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.os.Handler;)Tj
+-6 -1.1 TD
+(11:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.text.Editable;)Tj
+-6 -1.1 TD
+(12:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.text.TextWatcher;)Tj
+-6 -1.1 TD
+(13:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.view.MotionEvent;)Tj
+-6 -1.1 TD
+(14:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.view.View;)Tj
+-6 -1.1 TD
+(15:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.widget.EditText;)Tj
+-6 -1.1 TD
+(16:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(import)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( android.widget.TextView;)Tj
+-6 -1.1 TD
+(17:)Tj
+T*
+(18:)Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+2.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(19:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * An example full-screen activity that shows and hides the system UI \(i.e.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(20:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * status bar and navigation/system bar\) with user interaction.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(21:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( *)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(22:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( * @see SystemUiHider)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(23:)Tj
+/TT6 1 Tf
+2.4 0 TD
+( */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+(24:)Tj
+T*
+(25:)Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+2.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(class)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( BartalkActivity )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(extends)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( Activity {)Tj
+-24 -1.1 TD
+[(26:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(27:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * Whether or not the system UI should be auto-hidden after)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(28:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(29:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(30:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( AUTO_HIDE = )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(true)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-31.8 -1.1 TD
+(31:)Tj
+T*
+[(32:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(33:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(34:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * user interaction before hiding the system UI.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(35:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(36:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( AUTO_HIDE_DELAY_MILLIS = 3000;)Tj
+-19.2 -1.1 TD
+(37:)Tj
+T*
+[(38:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(39:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * If set, will toggle the system UI visibility upon interaction. Otherwise,)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(40:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * will show the system UI visibility upon interaction.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(41:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(42:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( TOGGLE_ON_CLICK = )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+11.4 0 TD
+(true)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(;)Tj
+-35.4 -1.1 TD
+(43:)Tj
+T*
+[(44:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(45:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * The flags to pass to {@link SystemUiHider#getInstance}.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(46:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(47:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(static)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( HIDER_FLAGS = SystemUiHider.FLAG_HIDE_NAVIGATION;)Tj
+-19.2 -1.1 TD
+(48:)Tj
+ET
+endstream
+endobj
+58 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+60 0 obj
+<<
+/Length 5381
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(BartalkActivity.java)-22397.3(spawrks 09/18/14)-28998.3(5-2/4\(18\))]TJ
+/TT4 1 Tf
+1.9 -1.6333 TD
+[(49:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(/**)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(50:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     * The instance of the {@link SystemUiHider} for this activity.)Tj
+/TT4 1 Tf
+-2.4 -1.1 TD
+(51:)Tj
+/TT6 1 Tf
+2.4 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-2.4 -1.1 TD
+[(52:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( SystemUiHider mSystemUiHider;)Tj
+-9 -1.1 TD
+(53:)Tj
+T*
+[(54:)-599.7(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(//)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(55:)Tj
+0 g
+2.4 0 TD
+(    )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+2.4 0 TD
+(// Bartalk instance variables)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(56:)Tj
+0 g
+2.4 0 TD
+(    )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+2.4 0 TD
+(//)Tj
+/TT4 1 Tf
+-4.8 -1.1 TD
+(57:)Tj
+0 g
+2.4 0 TD
+(    TextView mOutputText;)Tj
+-2.4 -1.1 TD
+[(58:)-599.7(    EditText mInputText;)]TJ
+T*
+(59:)Tj
+T*
+[(60:)-599.7(    @Override)]TJ
+T*
+[(61:)-599.7(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(protected)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( onCreate\(Bundle savedInstanceState\) {)Tj
+-13.2 -1.1 TD
+[(62:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(.onCreate\(savedInstanceState\);)Tj
+-10.2 -1.1 TD
+(63:)Tj
+T*
+[(64:)-599.7(        setContentView\(R.layout.activity_bartalk\);)]TJ
+T*
+(65:)Tj
+T*
+[(66:)-599.7(        )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(//)Tj
+/TT4 1 Tf
+-7.2 -1.1 TD
+(67:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(//  Bartalk code)Tj
+/TT4 1 Tf
+-7.2 -1.1 TD
+(68:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(//)Tj
+/TT4 1 Tf
+-7.2 -1.1 TD
+(69:)Tj
+0 g
+2.4 0 TD
+(        mOutputText = \(TextView\) findViewById\(R.id.fullscreen_content\);)Tj
+-2.4 -1.1 TD
+[(70:)-599.7(        mInputText= \(EditText\) findViewById\(R.id.input_text\);)]TJ
+T*
+(71:)Tj
+T*
+[(72:)-599.7(        mInputText.addTextChangedListener\()]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+27.6 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( TextWatcher\(\){)Tj
+-29.4 -1.1 TD
+[(73:)-599.7(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( afterTextChanged\(Editable s\) {})Tj
+-16.2 -1.1 TD
+[(74:)-599.7(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( beforeTextChanged\(CharSequence s, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+21 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( start, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( count, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( after\){})Tj
+-52.2 -1.1 TD
+[(75:)-599.7(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+9.6 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( onTextChanged\(CharSequence s, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+18.6 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( start, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+4.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( before, )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( count\){)Tj
+-50.4 -1.1 TD
+[(76:)-599.7(                mOutputText.setText\(mInputText.getText\(\)\);)]TJ
+T*
+[(77:)-599.7(            })]TJ
+T*
+[(78:)-599.7(        }\);)]TJ
+T*
+(79:)Tj
+T*
+[(80:)-599.7(        ActionBar actionBar = getActionBar\(\);)]TJ
+T*
+[(81:)-599.7(        actionBar.hide\(\);)]TJ
+T*
+(82:)Tj
+T*
+[(83:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( View controlsView = findViewById\(R.id.fullscreen_content_controls\);)Tj
+-10.2 -1.1 TD
+[(84:)-599.7(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.2 0 TD
+(final)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+( View contentView = findViewById\(R.id.fullscreen_content\);)Tj
+-10.2 -1.1 TD
+(85:)Tj
+T*
+[(86:)-599.7(        )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+7.2 0 TD
+(// Set up an instance of SystemUiHider to control the system UI for)Tj
+/TT4 1 Tf
+-7.2 -1.1 TD
+(87:)Tj
+0 g
+2.4 0 TD
+(        )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// this activity.)Tj
+/TT4 1 Tf
+-7.2 -1.1 TD
+(88:)Tj
+0 g
+2.4 0 TD
+(        mSystemUiHider = SystemUiHider.getInstance\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+30.6 0 TD
+(this)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+(, contentView, HIDER_FLAGS\);)Tj
+-35.4 -1.1 TD
+[(89:)-599.7(        mSystemUiHider.setup\(\);)]TJ
+T*
+[(90:)-599.7(        mSystemUiHider)]TJ
+T*
+[(91:)-599.7(                .setOnVisibilityChangeListener\()]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+30.6 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( SystemUiHider.OnVisibilityChangeListener\(\) {)Tj
+-32.4 -1.1 TD
+[(92:)-599.7(                    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+14.4 0 TD
+(// Cached values.)Tj
+/TT4 1 Tf
+-14.4 -1.1 TD
+(93:)Tj
+0 g
+2.4 0 TD
+(                    )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( mControlsHeight;)Tj
+-16.2 -1.1 TD
+[(94:)-599.7(                    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( mShortAnimTime;)Tj
+-16.2 -1.1 TD
+(95:)Tj
+T*
+[(96:)-599.7(                    @Override)]TJ
+ET
+endstream
+endobj
+61 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+63 0 obj
+<<
+/Length 5491
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(BartalkActivity.java)-22397.3(spawrks 09/18/14)-28998.3(5-3/4\(19\))]TJ
+/TT4 1 Tf
+1.9 -1.6333 TD
+[(97:)-599.7(                    @TargetApi\(Build.VERSION_CODES.HONEYCOMB_MR2\))]TJ
+0 -1.1 TD
+[(98:)-599.7(                    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+14.4 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( onVisibilityChange\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( visible\) {)Tj
+-37.2 -1.1 TD
+[(99:)-599.7(                        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+16.8 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2\) {)Tj
+-18.6 -1.1 TD
+[(100:)-599.6(                            )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+19.8 0 TD
+(// If the ViewPropertyAnimator API is available)Tj
+/TT4 1 Tf
+-19.8 -1.1 TD
+(101:)Tj
+0 g
+3 0 TD
+(                            )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+16.8 0 TD
+(// \(Honeycomb MR2 and later\), use it to animate the)Tj
+/TT4 1 Tf
+-19.8 -1.1 TD
+(102:)Tj
+0 g
+3 0 TD
+(                            )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+16.8 0 TD
+(// in-layout UI controls at the bottom of the)Tj
+/TT4 1 Tf
+-19.8 -1.1 TD
+(103:)Tj
+0 g
+3 0 TD
+(                            )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+16.8 0 TD
+(// screen.)Tj
+/TT4 1 Tf
+-19.8 -1.1 TD
+(104:)Tj
+0 g
+3 0 TD
+(                            )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+16.8 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(mControlsHeight == 0\) {)Tj
+-21 -1.1 TD
+[(105:)-599.6(                                mControlsHeight = controlsView.getHeight\(\);)]TJ
+T*
+[(106:)-599.6(                            })]TJ
+T*
+[(107:)-599.6(                            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+19.8 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(mShortAnimTime == 0\) {)Tj
+-21 -1.1 TD
+[(108:)-599.6(                                mShortAnimTime = getResources\(\).getInteger\()]TJ
+T*
+[(109:)-599.6(                                        android.R.integer.config_shortAnimTime\);)]TJ
+T*
+[(110:)-599.6(                            })]TJ
+T*
+[(111:)-599.6(                            controlsView.animate\(\))]TJ
+T*
+[(112:)-599.6(                                    .translationY\(visible ? 0 : mControlsHeight\))]TJ
+T*
+[(113:)-599.6(                                    .setDuration\(mShortAnimTime\);)]TJ
+T*
+[(114:)-599.6(                        } )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+18.6 0 TD
+(else)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( {)Tj
+-21 -1.1 TD
+[(115:)-599.6(                            )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+19.8 0 TD
+(// If the ViewPropertyAnimator APIs arenít)Tj
+/TT4 1 Tf
+-19.8 -1.1 TD
+(116:)Tj
+0 g
+3 0 TD
+(                            )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+16.8 0 TD
+(// available, simply show or hide the in-layout UI)Tj
+/TT4 1 Tf
+-19.8 -1.1 TD
+(117:)Tj
+0 g
+3 0 TD
+(                            )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+16.8 0 TD
+(// controls.)Tj
+/TT4 1 Tf
+-19.8 -1.1 TD
+(118:)Tj
+0 g
+3 0 TD
+(                            controlsView.setVisibility\(visible ? View.VISIBLE : View.GONE\);)Tj
+-3 -1.1 TD
+[(119:)-599.6(                        })]TJ
+T*
+(120:)Tj
+T*
+[(121:)-599.6(                        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+17.4 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(visible && AUTO_HIDE\) {)Tj
+-18.6 -1.1 TD
+[(122:)-599.6(                            )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+19.8 0 TD
+(// Schedule a hide\(\).)Tj
+/TT4 1 Tf
+-19.8 -1.1 TD
+(123:)Tj
+0 g
+3 0 TD
+(                            delayedHide\(AUTO_HIDE_DELAY_MILLIS\);)Tj
+-3 -1.1 TD
+[(124:)-599.6(                        })]TJ
+T*
+[(125:)-599.6(                    })]TJ
+T*
+[(126:)-599.6(                }\);)]TJ
+T*
+(127:)Tj
+T*
+[(128:)-599.6(        )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+7.8 0 TD
+(// Set up the user interaction to manually show or hide the system UI.)Tj
+/TT4 1 Tf
+-7.8 -1.1 TD
+(129:)Tj
+0 g
+3 0 TD
+(        contentView.setOnClickListener\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+23.4 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( View.OnClickListener\(\) {)Tj
+-28.2 -1.1 TD
+[(130:)-599.6(            @Override)]TJ
+T*
+[(131:)-599.6(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( onClick\(View view\) {)Tj
+-16.8 -1.1 TD
+(132:)Tj
+T*
+[(133:)-599.6(                )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+12.6 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(TOGGLE_ON_CLICK\) {)Tj
+-13.8 -1.1 TD
+[(134:)-599.6(                    mSystemUiHider.toggle\(\);)]TJ
+T*
+[(135:)-599.6(                } )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+13.8 0 TD
+(else)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( {)Tj
+-16.2 -1.1 TD
+[(136:)-599.6(                    mSystemUiHider.show\(\);)]TJ
+T*
+[(137:)-599.6(                })]TJ
+T*
+[(138:)-599.6(            })]TJ
+T*
+[(139:)-599.6(        }\);)]TJ
+T*
+(140:)Tj
+T*
+[(141:)-599.6(        )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+7.8 0 TD
+(// Upon interacting with UI controls, delay any scheduled hide\(\))Tj
+/TT4 1 Tf
+-7.8 -1.1 TD
+(142:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// operations to prevent the jarring behavior of controls going away)Tj
+/TT4 1 Tf
+-7.8 -1.1 TD
+(143:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// while interacting with the UI.)Tj
+/TT4 1 Tf
+-7.8 -1.1 TD
+(144:)Tj
+0 g
+3 0 TD
+(        findViewById\(R.id.input_text\).setOnTouchListener\(mDelayHideTouchListener\);)Tj
+ET
+endstream
+endobj
+64 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+66 0 obj
+<<
+/Length 4275
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(BartalkActivity.java)-22397.3(spawrks 09/18/14)-28998.3(5-4/4\(20\))]TJ
+/TT4 1 Tf
+1.3 -1.6333 TD
+[(145:)-599.6(    })]TJ
+0 -1.1 TD
+(146:)Tj
+T*
+[(147:)-599.6(    @Override)]TJ
+T*
+[(148:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(protected)Tj
+/TT4 1 Tf
+0 g
+5.4 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( onPostCreate\(Bundle savedInstanceState\) {)Tj
+-13.8 -1.1 TD
+[(149:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(super)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(.onPostCreate\(savedInstanceState\);)Tj
+-10.8 -1.1 TD
+(150:)Tj
+T*
+[(151:)-599.6(        )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+7.8 0 TD
+(// Trigger the initial hide\(\) shortly after the activity has been)Tj
+/TT4 1 Tf
+-7.8 -1.1 TD
+(152:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// created, to briefly hint to the user that UI controls)Tj
+/TT4 1 Tf
+-7.8 -1.1 TD
+(153:)Tj
+0 g
+3 0 TD
+(        )Tj
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+4.8 0 TD
+(// are available.)Tj
+/TT4 1 Tf
+-7.8 -1.1 TD
+(154:)Tj
+0 g
+3 0 TD
+(        delayedHide\(100\);)Tj
+-3 -1.1 TD
+[(155:)-599.6(    })]TJ
+T*
+(156:)Tj
+T*
+(157:)Tj
+T*
+[(158:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(159:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * Touch listener to use for in-layout UI controls to delay hiding the)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(160:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * system UI. This is to prevent the jarring behavior of controls going away)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(161:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * while interacting with activity UI.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(162:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(163:)-599.6(    View.OnTouchListener mDelayHideTouchListener = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+33.6 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( View.OnTouchListener\(\) {)Tj
+-35.4 -1.1 TD
+[(164:)-599.6(        @Override)]TJ
+T*
+[(165:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(boolean)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( onTouch\(View view, MotionEvent motionEvent\) {)Tj
+-16.2 -1.1 TD
+[(166:)-599.6(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(if)Tj
+/TT4 1 Tf
+0 g
+1.2 0 TD
+( \(AUTO_HIDE\) {)Tj
+-11.4 -1.1 TD
+[(167:)-599.6(                delayedHide\(AUTO_HIDE_DELAY_MILLIS\);)]TJ
+T*
+[(168:)-599.6(            })]TJ
+T*
+(169:)Tj
+T*
+[(170:)-599.6(            )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+10.2 0 TD
+(return)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(false)Tj
+/TT4 1 Tf
+0 g
+3 0 TD
+(;)Tj
+-17.4 -1.1 TD
+[(171:)-599.6(        })]TJ
+T*
+[(172:)-599.6(    };)]TJ
+T*
+(173:)Tj
+T*
+[(174:)-599.6(    Handler mHideHandler = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+19.2 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( Handler\(\);)Tj
+-21 -1.1 TD
+[(175:)-599.6(    Runnable mHideRunnable = )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+20.4 0 TD
+(new)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( Runnable\(\) {)Tj
+-22.2 -1.1 TD
+[(176:)-599.6(        @Override)]TJ
+T*
+[(177:)-599.6(        )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(public)Tj
+/TT4 1 Tf
+0 g
+3.6 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( run\(\) {)Tj
+-14.4 -1.1 TD
+[(178:)-599.6(            mSystemUiHider.hide\(\);)]TJ
+T*
+[(179:)-599.6(        })]TJ
+T*
+[(180:)-599.6(    };)]TJ
+T*
+(181:)Tj
+T*
+[(182:)-599.6(    )]TJ
+/TT6 1 Tf
+0.698 0.133 0.133 rg
+5.4 0 TD
+(/**)Tj
+/TT4 1 Tf
+-5.4 -1.1 TD
+(183:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * Schedules a call to hide\(\) in [delay] milliseconds, canceling any)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(184:)Tj
+/TT6 1 Tf
+3 0 TD
+(     * previously scheduled calls.)Tj
+/TT4 1 Tf
+-3 -1.1 TD
+(185:)Tj
+/TT6 1 Tf
+3 0 TD
+(     */)Tj
+/TT4 1 Tf
+0 g
+-3 -1.1 TD
+[(186:)-599.6(    )]TJ
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+5.4 0 TD
+(private)Tj
+/TT4 1 Tf
+0 g
+4.2 0 TD
+( )Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+0.6 0 TD
+(void)Tj
+/TT4 1 Tf
+0 g
+2.4 0 TD
+( delayedHide\()Tj
+/TT2 1 Tf
+0.627 0.125 0.941 rg
+7.8 0 TD
+(int)Tj
+/TT4 1 Tf
+0 g
+1.8 0 TD
+( delayMillis\) {)Tj
+-22.2 -1.1 TD
+[(187:)-599.6(        mHideHandler.removeCallbacks\(mHideRunnable\);)]TJ
+T*
+[(188:)-599.6(        mHideHandler.postDelayed\(mHideRunnable, delayMillis\);)]TJ
+T*
+[(189:)-599.6(    })]TJ
+T*
+[(190:)-599.6(})]TJ
+ET
+endstream
+endobj
+67 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+69 0 obj
+<<
+/Length 745
+>>
+stream
+BT
+/TT2 1 Tf
+0 10 -10 0 35.6667 29 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+[(Table of Contents)-24197.6(spawrks 09/18/14)-29598.4(-1/1\(21\))]TJ
+/TT4 1 Tf
+0 -1.6333 TD
+(  1 bartalk/src/main/java/com/delta/bartalk/util/SystemUiHider.java   4 pages  172 lines  14/03/12 16:02:03)Tj
+0 -1.1 TD
+(  2 bartalk/src/main/java/com/delta/bartalk/util/SystemUiHiderBase.java   2 pages   63 lines  14/03/12 16:02:03)Tj
+T*
+(  3 bartalk/src/main/java/com/delta/bartalk/util/SystemUiHiderHoneycomb.java   3 pages  133 lines  14/03/12 16:02:03)Tj
+T*
+(  4 bartalk/src/main/java/com/delta/bartalk/AutoResizeTextView.java   7 pages  306 lines  14/03/12 16:20:57)Tj
+T*
+(  5 bartalk/src/main/java/com/delta/bartalk/BartalkActivity.java   4 pages  189 lines  14/03/12 16:23:47)Tj
+ET
+endstream
+endobj
+70 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+7 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+72 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+73 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+74 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 99
+/FontBBox [-28 -250 742 805]
+/FontName /Courier-Oblique
+/ItalicAngle -15
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 122
+/Widths [600 0 0 0 0 0 0 0 600 600 0 0 0 600 600 600 
+600 600 600 600 600 600 600 600 600 600 0 0 0 0 0 0 
+0 600 600 600 0 0 0 0 600 0 0 0 0 0 0 0 
+0 0 600 600 600 600 600 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 72 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 125
+/Widths [600 600 0 0 0 0 600 0 600 600 0 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 0 600 600 600 600 600 600 600 600 0 0 0 0 0 600 
+0 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 73 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 600 600 600 0 0 0 0 600 600 600 600 600 600 600 600 
+600 600 600 600 0 600 600 600 600 0 600 0 600 600 600 0 
+600 600 600 600 600 600 600 600 600 600 600 0 600 600 600 600 
+600 0 600 600 600 600 600 600 0 600 0 600 0 600 0 600 
+0 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 600 600 0 600 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+/FontDescriptor 74 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 11 0 R
+/Contents 10 0 R
+>>
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 14 0 R
+/Contents 13 0 R
+>>
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 17 0 R
+/Contents 16 0 R
+>>
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 20 0 R
+/Contents 19 0 R
+>>
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 23 0 R
+/Contents 22 0 R
+>>
+endobj
+24 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 26 0 R
+/Contents 25 0 R
+>>
+endobj
+27 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 29 0 R
+/Contents 28 0 R
+>>
+endobj
+30 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 32 0 R
+/Contents 31 0 R
+>>
+endobj
+33 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 35 0 R
+/Contents 34 0 R
+>>
+endobj
+36 0 obj
+<<
+/Type /Page
+/Parent 40 0 R
+/Resources 38 0 R
+/Contents 37 0 R
+>>
+endobj
+41 0 obj
+<<
+/Type /Page
+/Parent 40 0 R
+/Resources 43 0 R
+/Contents 42 0 R
+>>
+endobj
+44 0 obj
+<<
+/Type /Page
+/Parent 40 0 R
+/Resources 46 0 R
+/Contents 45 0 R
+>>
+endobj
+47 0 obj
+<<
+/Type /Page
+/Parent 40 0 R
+/Resources 49 0 R
+/Contents 48 0 R
+>>
+endobj
+50 0 obj
+<<
+/Type /Page
+/Parent 40 0 R
+/Resources 52 0 R
+/Contents 51 0 R
+>>
+endobj
+53 0 obj
+<<
+/Type /Page
+/Parent 40 0 R
+/Resources 55 0 R
+/Contents 54 0 R
+>>
+endobj
+56 0 obj
+<<
+/Type /Page
+/Parent 40 0 R
+/Resources 58 0 R
+/Contents 57 0 R
+>>
+endobj
+59 0 obj
+<<
+/Type /Page
+/Parent 40 0 R
+/Resources 61 0 R
+/Contents 60 0 R
+>>
+endobj
+62 0 obj
+<<
+/Type /Page
+/Parent 40 0 R
+/Resources 64 0 R
+/Contents 63 0 R
+>>
+endobj
+65 0 obj
+<<
+/Type /Page
+/Parent 40 0 R
+/Resources 67 0 R
+/Contents 66 0 R
+>>
+endobj
+68 0 obj
+<<
+/Type /Page
+/Parent 71 0 R
+/Resources 70 0 R
+/Contents 69 0 R
+>>
+endobj
+75 0 obj
+<<
+/S /D
+>>
+endobj
+76 0 obj
+<<
+/Nums [0 75 0 R ]
+>>
+endobj
+8 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 9 0 R 12 0 R 15 0 R 18 0 R 21 0 R 24 0 R 27 0 R 30 0 R 33 0 R]
+/Count 10
+/Parent 39 0 R
+>>
+endobj
+40 0 obj
+<<
+/Type /Pages
+/Kids [36 0 R 41 0 R 44 0 R 47 0 R 50 0 R 53 0 R 56 0 R 59 0 R 62 0 R 65 0 R]
+/Count 10
+/Parent 39 0 R
+>>
+endobj
+71 0 obj
+<<
+/Type /Pages
+/Kids [68 0 R]
+/Count 1
+/Parent 39 0 R
+>>
+endobj
+39 0 obj
+<<
+/Type /Pages
+/Kids [8 0 R 40 0 R 71 0 R ]
+/Count 21
+/Rotate 90
+/MediaBox [0 0 595 842]
+>>
+endobj
+77 0 obj
+<<
+/CreationDate (D:20140918133108-05'00')
+/ModDate (D:20140918133108-05'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+78 0 obj
+<<
+/Type /Catalog
+/Pages 39 0 R
+/PageLabels 76 0 R
+>>
+endobj
+xref
+0 79
+0000000000 65535 f 
+0000099575 00000 n 
+0000000016 00000 n 
+0000005668 00000 n 
+0000098045 00000 n 
+0000098497 00000 n 
+0000099012 00000 n 
+0000097311 00000 n 
+0000101393 00000 n 
+0000099655 00000 n 
+0000005785 00000 n 
+0000011377 00000 n 
+0000099737 00000 n 
+0000011495 00000 n 
+0000016361 00000 n 
+0000099820 00000 n 
+0000016479 00000 n 
+0000019485 00000 n 
+0000099903 00000 n 
+0000019603 00000 n 
+0000024529 00000 n 
+0000099986 00000 n 
+0000024647 00000 n 
+0000026159 00000 n 
+0000100069 00000 n 
+0000026266 00000 n 
+0000031607 00000 n 
+0000100152 00000 n 
+0000031725 00000 n 
+0000036300 00000 n 
+0000100235 00000 n 
+0000036418 00000 n 
+0000040622 00000 n 
+0000100318 00000 n 
+0000040740 00000 n 
+0000045777 00000 n 
+0000100401 00000 n 
+0000045895 00000 n 
+0000051417 00000 n 
+0000101740 00000 n 
+0000101528 00000 n 
+0000100485 00000 n 
+0000051535 00000 n 
+0000055858 00000 n 
+0000100569 00000 n 
+0000055965 00000 n 
+0000060596 00000 n 
+0000100653 00000 n 
+0000060714 00000 n 
+0000066110 00000 n 
+0000100737 00000 n 
+0000066228 00000 n 
+0000071877 00000 n 
+0000100821 00000 n 
+0000071995 00000 n 
+0000074562 00000 n 
+0000100905 00000 n 
+0000074669 00000 n 
+0000080629 00000 n 
+0000100989 00000 n 
+0000080747 00000 n 
+0000086181 00000 n 
+0000101073 00000 n 
+0000086299 00000 n 
+0000091843 00000 n 
+0000101157 00000 n 
+0000091961 00000 n 
+0000096289 00000 n 
+0000101241 00000 n 
+0000096407 00000 n 
+0000097204 00000 n 
+0000101666 00000 n 
+0000097451 00000 n 
+0000097653 00000 n 
+0000097844 00000 n 
+0000101325 00000 n 
+0000101353 00000 n 
+0000101849 00000 n 
+0000101972 00000 n 
+trailer
+<<
+/Size 79
+/Root 78 0 R
+/Info 77 0 R
+/ID [<baaabb429941c4c5351279d0a7824a45><baaabb429941c4c5351279d0a7824a45>]
+>>
+startxref
+102042
+%%EOF
